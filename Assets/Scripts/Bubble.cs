@@ -29,8 +29,8 @@ public class Bubble : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D Player)
-    {
-        Destroy(gameObject);
-    }
+    //private void OnCollisionEnter2D(Collision2D Player)
+    //{
+    //    Destroy(gameObject);
+    //}
 }

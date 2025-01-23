@@ -36,5 +36,4 @@ public class PlayerController: MonoBehaviour
         rb.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);  
     }
 
-
 }

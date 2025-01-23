@@ -6,7 +6,6 @@ public class BubbleSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float Speed;
     public GameObject Bubble;
-    public BoxCollider Player;
     private Vector3 offset;
     void Start()
     {
