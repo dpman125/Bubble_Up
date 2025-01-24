@@ -7,6 +7,8 @@ public class TransitionScript : MonoBehaviour
     public GameObject Camera;
     public float CameraPanSpeed = 100f;
     public bool isCamTarget;
+    public GameObject Cannon;
+    public GameObject CannonLocation;
     
     void Start()
     {
@@ -16,8 +18,10 @@ public class TransitionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if above cam target, lower the camera to target scene
         if(Camera.transform.position.y > transform.position.y && isCamTarget)
         Camera.transform.Translate(new Vector3(0f, -CameraPanSpeed * Time.deltaTime, 0f));
+        // if below cam target, raise the camera to target scene
         if(Camera.transform.position.y < transform.position.y && isCamTarget)
         Camera.transform.Translate(new Vector3(0f, CameraPanSpeed * Time.deltaTime, 0f));
     }
@@ -26,6 +30,8 @@ public class TransitionScript : MonoBehaviour
     {
         // if player is within this collider, the camera must move to it
         isCamTarget = true;
+
+        Cannon.transform.position = CannonLocation.transform.position;
     }
     private void OnTriggerExit2D(Collider2D Player)
     {

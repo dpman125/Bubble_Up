@@ -5,6 +5,7 @@ public class Bubble : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Rigidbody2D rb;
+    public float lifeTime;
     //public float BubbleSpeed;
     void Start()
     {
@@ -15,18 +16,17 @@ public class Bubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(0f, BubbleSpeed * Time.deltaTime, 0f);
-        DeleteBubble();
+        lifeTime -= Time.deltaTime;
+
+        if (lifeTime <= 0.0f)
+        {
+            DeleteBubble();
+        }
+        
     }
 
-    IEnumerator DeleteBubble()
+    void DeleteBubble()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(2);
-            Destroy(gameObject);
-        }
-
-
+        Destroy(gameObject);
     }
 }
