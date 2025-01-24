@@ -4,18 +4,19 @@ using System.Collections;
 public class Bubble : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float BubbleSpeed;
-    public BoxCollider2D Player;
+    public Rigidbody2D rb;
+    //public float BubbleSpeed;
     void Start()
     {
-        DeleteBubble();
+        rb = GetComponent<Rigidbody2D>();
+        //rb.AddForce(BubbleSpawner.Launch);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0f, BubbleSpeed * Time.deltaTime, 0f);
-        
+        //transform.Translate(0f, BubbleSpeed * Time.deltaTime, 0f);
+        DeleteBubble();
     }
 
     IEnumerator DeleteBubble()
@@ -28,9 +29,4 @@ public class Bubble : MonoBehaviour
 
 
     }
-
-    //private void OnCollisionEnter2D(Collision2D Player)
-    //{
-    //    Destroy(gameObject);
-    //}
 }
