@@ -11,6 +11,7 @@ public class BubbleSpawner : MonoBehaviour
     public GameObject Bubble;
     public Vector2 Aim;
     public Vector2 Launch;
+    public Animator ShootAnim;
     void Start()
     {
       
@@ -22,7 +23,7 @@ public class BubbleSpawner : MonoBehaviour
         //Fire
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            ShootAnim.Play("CannonFire");
             var _b = Instantiate(Bubble, transform.position, transform.rotation);
             _b.GetComponent<Rigidbody2D>().linearVelocity = Launch;
         }
