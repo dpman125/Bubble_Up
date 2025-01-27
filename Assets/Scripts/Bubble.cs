@@ -1,11 +1,14 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 public class Bubble : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Rigidbody2D rb;
     public float lifeTime;
+    private IEnumerator coroutine;
+    public AudioSource audio;
     //public float BubbleSpeed;
     void Start()
     {
@@ -20,13 +23,23 @@ public class Bubble : MonoBehaviour
 
         if (lifeTime <= 0.0f)
         {
-            DeleteBubble();
+            
+            coroutine = DeleteBubble();
+            StartCoroutine(coroutine);
         }
         
     }
 
-    void DeleteBubble()
+    IEnumerator DeleteBubble()
     {
+        
+        audio.Play();
+        float timeToWait = .3f;
+        // play audio
+        
+        yield return new WaitForSeconds(timeToWait);
         Destroy(gameObject);
+        
+        
     }
 }

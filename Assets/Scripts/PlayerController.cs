@@ -60,6 +60,9 @@ public class PlayerController: MonoBehaviour
         //rb.linearVelocityY < 0.001 && rb.linearVelocityY > -0.001
         if (IsOnGround)
         {
+            AudioSource audio = GetComponent<AudioSource>();
+
+            audio.Play();
             // jump
             rb.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
             

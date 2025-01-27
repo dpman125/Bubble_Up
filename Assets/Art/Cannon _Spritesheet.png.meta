@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cannon _Spritesheet_0: 4558494599862732393
+      Cannon _Spritesheet_1: 6109388493913305317
+      Cannon _Spritesheet_2: 8640906102556259230
+      Cannon _Spritesheet_3: 713044274009848887
+      Cannon _Spritesheet_4: -4014843449576700532
+      Cannon _Spritesheet_5: -1443546196671169678
+      Cannon _Spritesheet_6: 9146312391694824711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

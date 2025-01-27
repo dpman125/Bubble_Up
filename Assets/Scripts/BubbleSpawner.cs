@@ -24,6 +24,9 @@ public class BubbleSpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ShootAnim.Play("CannonFire");
+            // play audio
+            AudioSource Spawnaudio = GetComponent<AudioSource>();
+            Spawnaudio.Play();
             var _b = Instantiate(Bubble, transform.position, transform.rotation);
             _b.GetComponent<Rigidbody2D>().linearVelocity = Launch;
         }

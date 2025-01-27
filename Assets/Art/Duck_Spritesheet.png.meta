@@ -597,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Duck_Spritesheet_0: 5832086096171858190
+      Duck_Spritesheet_1: 4477384488963669071
+      Duck_Spritesheet_10: 8836611600858378172
+      Duck_Spritesheet_11: 6582040413218474889
+      Duck_Spritesheet_12: -4382550916101718055
+      Duck_Spritesheet_13: 3357305939650036018
+      Duck_Spritesheet_14: 8433350060907186637
+      Duck_Spritesheet_15: -6665110020889249867
+      Duck_Spritesheet_16: 7070265775076065742
+      Duck_Spritesheet_17: -4057483747206370002
+      Duck_Spritesheet_18: 8383317086424821777
+      Duck_Spritesheet_2: -201036616210602189
+      Duck_Spritesheet_3: -4167790680828657051
+      Duck_Spritesheet_4: 265316574545378310
+      Duck_Spritesheet_5: -562951089316698091
+      Duck_Spritesheet_6: -201708680454235913
+      Duck_Spritesheet_7: 4725793360126610433
+      Duck_Spritesheet_8: 6477910253376183658
+      Duck_Spritesheet_9: 5445573648263362427
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
