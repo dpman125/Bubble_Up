@@ -62,7 +62,9 @@ public class PlayerController: MonoBehaviour
         {
             // jump
             rb.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-            
+
+            AudioSource Spawnaudio = GetComponent<AudioSource>();
+            Spawnaudio.Play();
         }
         
     }
