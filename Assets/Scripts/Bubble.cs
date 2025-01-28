@@ -1,16 +1,17 @@
 using UnityEngine;
 using System;
+using System.Collections;
 
 public class Bubble : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Rigidbody2D rb;
     public float lifeTime;
-    //public float BubbleSpeed;
+    public Animator anime;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //rb.AddForce(BubbleSpawner.Launch);
+        anime.enabled = false;
     }
 
     // Update is called once per frame
@@ -20,9 +21,9 @@ public class Bubble : MonoBehaviour
 
         if (lifeTime <= 0.0f)
         {
-            DeleteBubble();
+            GameObject.Find("Pop_Sound").GetComponent<PopSound>().playPop();
+            anime.enabled = true;
         }
-        
     }
 
     void DeleteBubble()

@@ -12,7 +12,6 @@ public class BubbleSpawner : MonoBehaviour
     public Vector2 Aim;
     public Vector2 Launch;
     public Animator ShootAnim;
-    public AudioSource Spawnaudio;
     void Start()
     {
 
@@ -24,7 +23,7 @@ public class BubbleSpawner : MonoBehaviour
         //Fire
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            var _b = Instantiate(Bubble, transform.position, transform.rotation);
+            var _b = Instantiate(Bubble, transform.position, Quaternion.identity);
             _b.GetComponent<Rigidbody2D>().linearVelocity = Launch;
 
             ShootAnim.SetTrigger("Fire");
@@ -51,7 +50,7 @@ public class BubbleSpawner : MonoBehaviour
         }
 
 
-        Spawnaudio.Play();
+        //Spawnaudio.Play();
 
         transform.rotation = Quaternion.Euler(0f, 0f, -Aim.x);
         Launch = transform.up * Aim.y * LaunchMod;

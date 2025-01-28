@@ -1,10 +1,70 @@
 fileFormatVersion: 2
-guid: 4533bc40d5481cf42b09de838deee48d
+guid: c0023cb2bf1aaa34db5a5e2501137227
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4628433642112642939
-    second: map 1_0
+      213: -6889695757476023317
+    second: bubblePop_0
+  - first:
+      213: 1186324917501737341
+    second: bubblePop_1
+  - first:
+      213: -7683347693863914762
+    second: bubblePop_2
+  - first:
+      213: 5927588965613476219
+    second: bubblePop_3
+  - first:
+      213: -8004936823164419223
+    second: bubblePop_4
+  - first:
+      213: 8691926468458750253
+    second: bubblePop_5
+  - first:
+      213: 7725446438251654071
+    second: bubblePop_6
+  - first:
+      213: 1928919090882732719
+    second: bubblePop_7
+  - first:
+      213: -9029795337058660885
+    second: bubblePop_8
+  - first:
+      213: 7626655961763329107
+    second: bubblePop_9
+  - first:
+      213: -2638578884514488285
+    second: bubblePop_10
+  - first:
+      213: -8405141796299318316
+    second: bubblePop_11
+  - first:
+      213: -4912012332486555084
+    second: bubblePop_12
+  - first:
+      213: -568435763063567340
+    second: bubblePop_13
+  - first:
+      213: 2741445172746532771
+    second: bubblePop_14
+  - first:
+      213: -8264143070452470077
+    second: bubblePop_15
+  - first:
+      213: -6302780769258525276
+    second: bubblePop_16
+  - first:
+      213: -6982691351379238353
+    second: bubblePop_17
+  - first:
+      213: 2194339574709631057
+    second: bubblePop_18
+  - first:
+      213: -3242233086911140005
+    second: bubblePop_19
+  - first:
+      213: -527288883284279307
+    second: bubblePop_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +157,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,23 +173,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: map 1_0
+      name: bubblePop_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 952
-        height: 1408
+        x: 676
+        y: 230
+        width: 571
+        height: 552
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7f679000ef7b3040800000000000000
-      internalID: 4628433642112642939
+      spriteID: b799aed22c6034250800000000000000
+      internalID: 5927588965613476219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubblePop_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 237
+        width: 575
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21ac4e321def9870800000000000000
+      internalID: 8691926468458750253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bubblePop_7
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 229
+        width: 596
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2e88c71b5e4ca10800000000000000
+      internalID: 1928919090882732719
       vertices: []
       indices: 
       edges: []
@@ -151,7 +242,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 30a91d2416bde214a9b02904749f257e
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +252,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      map 1_0: 4628433642112642939
+      bubblePop_0: -118796641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

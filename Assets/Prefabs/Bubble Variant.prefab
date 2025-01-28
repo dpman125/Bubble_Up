@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3192335709459301676, guid: 7de79eafc2ddd1046821219e787973c6, type: 3}
+      propertyPath: anime
+      value: 
+      objectReference: {fileID: -8852118557156634830}
+    - target: {fileID: 3192335709459301676, guid: 7de79eafc2ddd1046821219e787973c6, type: 3}
+      propertyPath: PopSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b277748a3380c84290382cbdd4fc0d3, type: 3}
     - target: {fileID: 5278382314985102366, guid: 7de79eafc2ddd1046821219e787973c6, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -63,5 +71,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3066096093869872438, guid: 7de79eafc2ddd1046821219e787973c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8852118557156634830}
   m_SourcePrefab: {fileID: 100100000, guid: 7de79eafc2ddd1046821219e787973c6, type: 3}
+--- !u!1 &690403834131265093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3066096093869872438, guid: 7de79eafc2ddd1046821219e787973c6, type: 3}
+  m_PrefabInstance: {fileID: 2528833339459478387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &-8852118557156634830
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690403834131265093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1aa1aa153a6b57448916e00cce24d7fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
